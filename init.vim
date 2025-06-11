@@ -34,6 +34,7 @@ let g:coc_global_extensions = [
     \'@yaegassy/coc-ruff',
     \'coc-tsserver',
     \'coc-html',
+    \'coc-markdownlint',
 \]
 
 " Some servers have issues with backup files, see #649
