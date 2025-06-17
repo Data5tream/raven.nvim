@@ -1,13 +1,23 @@
-local vim = vim
-
 -- General settings
 require("config.settings")
 
 -- Load plugins
 require("config.plugins")
 
--- Load coc config
-require("config.coc")
+-- Load mason config
+require("config.mason")
+
+-- Load nvim LSP config
+require("config.lspconfig")
+
+-- Load LSPSaga config
+require("config.lspsaga")
+
+-- Load trouble config
+require("config.trouble")
+
+-- Load cmp config
+require("config.cmp")
 
 -- Load NERDTree config
 require("config.nerdtree")
