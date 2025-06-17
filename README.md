@@ -1,9 +1,7 @@
-# Data5tream's nvim configruation
+# raven.nvim
 
-## Requirements
-
-- [vim-plug](https://github.com/junegunn/vim-plug)
-- node (required by coc)
+> Dedicated to a four legged goofball, bonking her head against random stuff in
+> the eternal hunting grounds.
 
 ## Setup
 
