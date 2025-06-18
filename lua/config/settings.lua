@@ -18,5 +18,5 @@ vim.opt.relativenumber = true
 vim.opt.ruler = true
 vim.opt.laststatus = 2
 
--- Clipboard
-vim.opt.clipboard = "unnamedplus"
+-- Filetype detection
+vim.cmd("filetype plugin indent on")
