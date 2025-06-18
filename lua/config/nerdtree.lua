@@ -32,8 +32,33 @@ vim.api.nvim_create_autocmd("BufEnter", {
             and vim.b.NERDTree
             and vim.b.NERDTree.isTabTree
         then
-           -- feedkeys simulates typing ":quit<CR>" then a backspace to clear command line
-           vim.fn.feedkeys(":quit\n:\b")
+            -- feedkeys simulates typing ":quit<CR>" then a backspace to clear command line
+            vim.fn.feedkeys(":quit\n:\b")
         end
     end,
+})
+
+-- Prevent other buffers opening in the NERDTree buffer
+vim.api.nvim_create_autocmd("BufEnter", {
+    pattern = "*",
+    callback = function()
+        if vim.fn.winnr() ~= vim.fn.winnr("h") then
+            return
+        end
+
+        local window_count = #vim.api.nvim_list_wins()
+        local alt_buf_name = vim.fn.bufname("#")
+        local cur_buf_name = vim.fn.bufname("%")
+
+        local is_alt_nerdtree = alt_buf_name:match("NERD_tree_tab_%d+")
+        local is_cur_nerdtree = cur_buf_name:match("NERD_tree_tab_%d+")
+
+        if is_alt_nerdtree and not is_cur_nerdtree and window_count > 1 then
+            local current_buffer = vim.api.nvim_get_current_buf()
+
+            vim.cmd("buffer #")
+            vim.cmd("wincmd w")
+            vim.cmd("buffer " .. current_buffer)
+        end
+    end
 })
