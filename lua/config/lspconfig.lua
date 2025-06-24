@@ -23,3 +23,5 @@ setup_lsp_server("lua_ls", {
         }
     }
 })
+setup_lsp_server("angularls")
+setup_lsp_server("eslint")

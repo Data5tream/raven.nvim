@@ -10,5 +10,7 @@ mason_lspconfig.setup({
         "html",
         "cssls",
         "ruff",
+        "angularls",
+        "eslint",
     }
 })
