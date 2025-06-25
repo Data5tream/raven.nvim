@@ -23,7 +23,7 @@ vim.cmd("filetype plugin indent on")
 
 -- Custom filetypes
 vim.api.nvim_create_augroup("FileTypeDetect", { clear = true })
-vim.api.nvim_create_autocmd("BufRead,BufNewFile", {
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     pattern = "*.njk",
     callback = function()
         vim.opt.filetype = "html"
