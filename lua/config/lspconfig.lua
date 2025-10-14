@@ -25,3 +25,11 @@ setup_lsp_server("lua_ls", {
 })
 setup_lsp_server("angularls")
 setup_lsp_server("eslint")
+setup_lsp_server("pyright", {
+    capabilities = capabilities,
+    settings = {
+        pyright = {
+            disableOrganizeImports = true,
+        },
+    }
+})

@@ -1,7 +1,11 @@
 local mason = require("mason")
 local mason_lspconfig = require("mason-lspconfig")
 
-mason.setup()
+mason.setup({
+    ensure_installed = {
+        "prettier",
+    }
+})
 mason_lspconfig.setup({
     ensure_installed = {
         "rust_analyzer",
@@ -12,5 +16,6 @@ mason_lspconfig.setup({
         "ruff",
         "angularls",
         "eslint",
+        "pyright",
     }
 })
