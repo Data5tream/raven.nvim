@@ -34,6 +34,9 @@ require("config.indent-blankline")
 -- Load rainbow delimiters config
 require("config.rainbow")
 
+-- Load gitsigns config
+require("config.gitsigns")
+
 -- Load user functions
 require("functions")
 

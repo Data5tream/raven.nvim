@@ -23,6 +23,7 @@ Plug("tpope/vim-commentary")
 Plug("nvim-treesitter/nvim-treesitter")
 Plug("lukas-reineke/indent-blankline.nvim")
 Plug("HiPhish/rainbow-delimiters.nvim")
+Plug("lewis6991/gitsigns.nvim")
 
 vim.call("plug#end")
 
