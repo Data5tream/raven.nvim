@@ -30,3 +30,10 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     end,
     group = "FileTypeDetect",
 })
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = { "*.service", "*.container", "*.network", "*.volume" },
+    callback = function()
+        vim.opt.filetype = "systemd"
+    end,
+    group = "FileTypeDetect",
+})
