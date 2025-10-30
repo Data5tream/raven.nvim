@@ -17,5 +17,7 @@ mason_lspconfig.setup({
         "angularls",
         "eslint",
         "pyright",
+        "docker_language_server",
+        "yamlls",
     }
 })

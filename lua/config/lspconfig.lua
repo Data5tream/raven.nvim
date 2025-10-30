@@ -33,3 +33,13 @@ setup_lsp_server("pyright", {
         },
     }
 })
+setup_lsp_server("docker_language_server")
+setup_lsp_server("yamlls", {
+    settings = {
+        redhat = {
+            telemetry = {
+                enabled = false
+            }
+        }
+    }
+})
