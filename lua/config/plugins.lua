@@ -3,12 +3,12 @@ local Plug = vim.fn["plug#"]
 
 vim.call("plug#begin")
 
+Plug("nvim-lua/plenary.nvim")
 Plug("neovim/nvim-lspconfig")
 Plug("NLKNguyen/papercolor-theme")
 Plug("nvim-tree/nvim-web-devicons")
 Plug("mason-org/mason.nvim")
 Plug("mason-org/mason-lspconfig.nvim")
-Plug("nvimdev/lspsaga.nvim")
 Plug("folke/trouble.nvim")
 Plug("hrsh7th/nvim-cmp")
 Plug("hrsh7th/cmp-nvim-lsp")
@@ -24,6 +24,7 @@ Plug("nvim-treesitter/nvim-treesitter")
 Plug("lukas-reineke/indent-blankline.nvim")
 Plug("HiPhish/rainbow-delimiters.nvim")
 Plug("lewis6991/gitsigns.nvim")
+Plug("nvim-telescope/telescope.nvim", { ["branch"] = "0.1.x" })
 
 vim.call("plug#end")
 

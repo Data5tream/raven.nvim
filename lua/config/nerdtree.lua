@@ -2,8 +2,8 @@ local vim = vim
 
 local keyset = vim.keymap.set
 
-keyset("n", "<leader>n", ":NERDTreeFocus<CR>", { noremap = true, silent = true })
-keyset("n", "<C-t>", ":NERDTreeToggle<CR>", { noremap = true, silent = true })
+-- keyset("n", "<leader>n", ":NERDTreeFocus<CR>", { noremap = true, silent = true })
+keyset("n", "<leader>n", ":NERDTreeToggle<CR>", { noremap = true, silent = true })
 
 -- Detect if input is from stdin
 vim.api.nvim_create_autocmd("StdinReadPre", {

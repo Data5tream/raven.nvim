@@ -10,9 +10,6 @@ require("config.mason")
 -- Load nvim LSP config
 require("config.lspconfig")
 
--- Load LSPSaga config
-require("config.lspsaga")
-
 -- Load trouble config
 require("config.trouble")
 
@@ -36,6 +33,9 @@ require("config.rainbow")
 
 -- Load gitsigns config
 require("config.gitsigns")
+
+-- Load telescope config
+require("config.telescope")
 
 -- Load user functions
 require("functions")
