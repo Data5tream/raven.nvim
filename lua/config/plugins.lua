@@ -25,6 +25,7 @@ Plug("lukas-reineke/indent-blankline.nvim")
 Plug("HiPhish/rainbow-delimiters.nvim")
 Plug("lewis6991/gitsigns.nvim")
 Plug("nvim-telescope/telescope.nvim", { ["branch"] = "0.1.x" })
+Plug("prettier/vim-prettier", { ["do"] = "npm ci" })
 
 vim.call("plug#end")
 
