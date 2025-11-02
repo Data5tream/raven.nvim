@@ -12,3 +12,9 @@ currently **not** stable and subject to many breaking and non-breaking changes.
 - Open `nvim`
 - Run `:PlugInstall`
 - Reopen `nvim`
+
+## Dependencies
+
+- fd
+- ripgrep
+- node (for some of the LSPs)

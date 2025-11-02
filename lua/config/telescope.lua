@@ -23,7 +23,9 @@ keyset("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
 
 -- LSP
 keyset("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Document symbols" })
-keyset("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<cr>", { desc = "Workspace symbols" })
+keyset("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<cr>",
+    { desc = "Workspace symbols" }
+)
 keyset("n", "gr", "<cmd>Telescope lsp_references<cr>", { desc = "References" })
 keyset("n", "gi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Implementations" })
 keyset("n", "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Definitions" })

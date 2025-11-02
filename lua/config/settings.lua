@@ -12,6 +12,10 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 8
 vim.opt.softtabstop = 0
 
+-- Line limits
+vim.opt.colorcolumn = { 100 }
+vim.opt.textwidth = 100
+
 -- Line numbers and status
 vim.opt.number = true
 vim.opt.relativenumber = true

@@ -5,8 +5,8 @@ local trouble = require("trouble")
 
 trouble.setup()
 
-keyset("n", "<leader>xx", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer diagnostics" })
-keyset("n", "<leader>xX", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics" })
+keyset("n", "<leader>dd", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer diagnostics" })
+keyset("n", "<leader>dD", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics" })
 keyset("n", "<leader>xq", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix list" })
 keyset("n", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Location list" })
 keyset("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>", { desc = "LSP references" })
